@@ -1,0 +1,24 @@
+! This file contains commands to be read in for a Pythia8 run. 
+! Lines not beginning with a letter or digit are comments.
+! Names are case-insensitive  -  but spellings-sensitive!
+! The changes here are illustrative, not always physics-motivated.
+
+! 1) Settings that could be used in a main program, if desired.
+Main:numberOfEvents = 10000        ! number of events to generate
+Main:timesAllowErrors = 10000      ! abort run after this many flawed events
+
+! 2) Beam parameter settings. Values below agree with default ones.
+Beams:idA = 2212                   ! first beam, proton = 2212
+Beams:idB = 2212                   ! second beam, proton = 2212
+Beams:eCM = 13600.                 ! CM energy of collision = 13.6 TeV
+
+! 3) Settings for process generation internal to Pythia8.
+!    Produce generic qcd interactions with no pt cut
+HardQCD:all = on
+
+! 4) Optionally switch on hand-set cross section and Coulomb term.
+! Note: these values are illustrative only, not to be taken seriously.
+
+! 5) Parton distribution function selection - perhaps, something newer should be used later
+
+PDF:pHardSet = 8   ! Select CTEQ6L1, LO (used by CMS)
