@@ -46,3 +46,7 @@ Turns a trained logic model into a circuit, checks it against the PyTorch model 
 ```
 python compile_model.py runs/<run>
 ```
+
+## Embed in Correlator L2 firmware
+
+Follow instructions in https://github.com/SridharaDasu/geawis on how to embed a compiled LGN into the `geawis` project for CTL2 firmware. 
