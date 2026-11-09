@@ -1,0 +1,11 @@
+{
+  "data_dir": "data",
+  "model": "BaselineMLP",
+  "n_events": null,
+  "epochs": 20,
+  "batch_size": 128,
+  "lr": 0.01,
+  "device": "cpu",
+  "seed": 0,
+  "output": null
+}

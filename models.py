@@ -75,7 +75,7 @@ class Standardize(nn.Module):
 @register_model
 class BaselineMLP(nn.Sequential):
     """Plain float MLP (no logic gates, no quantization) as an accuracy reference."""
-    widths: list[int] = [256, 128]
+    widths: list[int] = [4, 2]
     in_dim: int = 144 * 3
     out_dim: int = 3
 
